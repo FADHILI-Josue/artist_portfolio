@@ -1,16 +1,18 @@
 import { FC } from 'react'
 import { useData } from '../providers/Providers'
 import Navbar from '../components/Navbar'
-import { home_left, prof_pic } from '../assets'
+import { bgsec1, bgsec2, home_left, prof_pic } from '../assets'
 import './home.css'
 import MaxWidthWrapper from '../components/MaxWidthWrapper'
 import Icons from '../components/Icons'
 // import Footer from '../components/Footer'
 import { MdWbSunny } from "react-icons/md";
 import Carousel from '../components/Carousel'
+import Arts from '../components/home/Arts'
+import Footer from '../components/Footer'
 const HomePage: FC = () => {
     const { toggleMode } = useData()
-    return <div className='w-full bg-black dark:bg-black dark:text-white overflow-x-hidden'>
+    return <div className='w-full bg-black text-black dark:bg-black dark:text-white overflow-x-hidden'>
         <Navbar />
         <div className="absolute w-full max-h-dvh overflow-hidden opacity-20 z-0 -left-[15%] flex items-start">
             <div className="circle"></div>
@@ -36,7 +38,7 @@ const HomePage: FC = () => {
                         <h1 className='font-bold text-5xl bg-gradient-to-r from-white to-stone-700 inline-block text-transparent bg-clip-text'>Madoc Pierce</h1>
                         <p>Blank sheets become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of feeling and the resonance of mental states.</p>
                         <div className="flex items-center gap-4">
-                            <button className='active:scale-95 cursor-pointer inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-light-gold text-black hover:bg-dark-gold h-10 py-2 px-4'>hello world</button>
+                            <button className='active:scale-95 cursor-pointer inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-light-gold text-black hover:bg-dark-gold h-10 py-2 px-4'>Contact Me</button>
                             <div className="rounded-full border p-2">
                                 <Icons.ig />
                             </div>
@@ -63,52 +65,29 @@ const HomePage: FC = () => {
 
             </MaxWidthWrapper>
             <Carousel />
-            {/* <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <h1>hlkjhlkhljkhlkjh</h1>
-            <Footer /> */}
-            <button onClick={toggleMode}>yooo</button>
+            <div className="flex flex-col gap-5">
+                <div className="w-full relative">
+                    <div className="absolute left-0 top-[20%] h-screen">
+                        <img src={bgsec1} alt="home left" className='h-4/5' />
+                    </div>
+                    <Arts />
+                </div>
+                <div className="w-full relative">
+                    <div className="absolute right-0 top-[20%] h-screen">
+                        <img src={bgsec2} alt="home left" className='h-4/5' />
+                    </div>
+                    <Arts />
+                </div>
+                <div className="w-full relative">
+                    <div className="absolute left-0 top-[20%] h-screen">
+                        <img src={bgsec1} alt="home left" className='h-4/5' />
+                    </div>
+                    <Arts />
+                </div>
+            </div>
+            {/* <button onClick={toggleMode}>yooo</button> */}
         </div>
+        <Footer />
     </div>
 }
 

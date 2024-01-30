@@ -70,8 +70,8 @@ const Carousel: FC<CarouselProps> = () => {
                 images?.map((_, i) =>
                     <div key={i} className='hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         <div className="h-[60vh] w-full overflow-hidden"><img key={i} src={images[i]} alt="arts" className='w-full object-contain' /></div>
-                        <div className="px-10">
-                            <h1>yoooo</h1>
+                        <div className="px-12 w-full text-black my-4 font-semibold">
+                            <h1>4th-Dimension no.1</h1>
                         </div>
                     </div>
                 )
@@ -79,6 +79,13 @@ const Carousel: FC<CarouselProps> = () => {
         </div>
         <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 bottom-0 top-0 right-0 px-5' onClick={() => next()}><FaArrowRight /></button>
         <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 bottom-0 top-0 left-0 px-5' onClick={() => prev()}><FaArrowLeft /></button>
+        <div className='[&>*]:bg-light-gold [&>*]:rounded-md  p-10 flex justify-center gap-2 items-center'>
+            <div className="h-[0.10rem] w-3" />
+            <div className="h-[0.15rem] w-4" />
+            <div className="h-1 w-5" />
+            <div className="h-[0.15rem] w-4" />
+            <div className="h-[0.10rem] w-3" />
+        </div>
     </div>
 }
 
