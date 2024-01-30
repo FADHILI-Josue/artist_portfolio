@@ -9,6 +9,7 @@ import Carousel from '../components/Carousel'
 import Arts from '../components/home/Arts'
 import Footer from '../components/Footer'
 import { arts } from '../lib/constants'
+import { Link } from 'react-router-dom'
 const HomePage: FC = () => {
     return <div className='w-full bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
         <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 -left-[15%] flex items-start">
@@ -23,7 +24,7 @@ const HomePage: FC = () => {
                 <img src={home_left} alt="home left" className='my-32 h-1/2 sm:h-2/3' />
             </div>
             <div className="w-full bg-white dark:bg-transparent">
-                <MaxWidthWrapper className='z-20'>
+                <MaxWidthWrapper className='relative z-20'>
                     <Navbar />
                     <div className="flex flex-col md:flex-row items-center mb-10 sm:mb-20">
                         <div className="space-y-20 self-end">
@@ -32,18 +33,18 @@ const HomePage: FC = () => {
                             <div className="flex flex-col sm:flex-row items-center gap-14 sm:gap-4">
                                 <button className='active:scale-95 cursor-pointer inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-light-gold text-white dark:text-black hover:bg-dark-gold h-10 py-6 px-10'>Contact Me</button>
                                 <div className="flex items-center gap-4">
-                                    <div className="rounded-full border p-2">
+                                    <Link to={'/'} className="rounded-full hover:scale-110 transition-all duration-300 border p-2">
                                         <Icons.ig />
-                                    </div>
-                                    <div className="rounded-full border p-2">
+                                    </Link>
+                                    <Link to={'/'} className="rounded-full hover:scale-110 transition-all duration-300 border p-2">
                                         <Icons.x />
-                                    </div>
-                                    <div className="rounded-full border p-2">
+                                    </Link>
+                                    <Link to={'/'} className="rounded-full hover:scale-110 transition-all duration-300 border p-2">
                                         <Icons.pintrest />
-                                    </div>
-                                    <div className="rounded-full border p-2">
+                                    </Link>
+                                    <Link to={'/'} className="rounded-full hover:scale-110 transition-all duration-300 border p-2">
                                         <Icons.fb />
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

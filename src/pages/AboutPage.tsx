@@ -3,9 +3,15 @@ import { bgsec1, home_left, prof_pic } from '../assets'
 import Navbar from '../components/Navbar'
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
+import { MdWbSunny } from 'react-icons/md';
+import { useData } from '../providers/Providers';
 
 
 const AboutPage = () => {
+    const navigate = useNavigate();
+    const { toggleMode } = useData()
+
     return <div className='w-full dark:bg-black overflow-x-hidden'>
         <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-30 z-0 -left-[15%] -right-[15%] flex items-start">
             <div className="circle"></div>
@@ -23,8 +29,14 @@ const AboutPage = () => {
             </div>
             <div className="w-full relative z-10 h-full">
                 <div className='mx-auto w-full sm:max-w-screen-2xl px-4 md:px-20 text-black dark:text-white'>
-                    <Navbar />
-                    <div className="w-full text-sm sm:text-xl backdrop-blur-3xl [&>p]:my-5 sm:px-10 py-20 bg-[281c0c]">
+                    <div className="w-full hidden md:block">
+                        <Navbar />
+                    </div>
+                    <div className="w-full flex md:hidden my-10 justify-between items-center">
+                        <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
+                        <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
+                    </div>
+                    <div className="w-full px-2 text-sm sm:text-xl backdrop-blur-3xl [&>p]:my-5 sm:px-10 py-20 bg-[#281c0c]">
                         <div className="sm:float-left sm:m-5">
                             <img src={prof_pic} alt="profile" className='w-72 md:w-80 lg:w-[35rem] object-contain' />
                         </div>

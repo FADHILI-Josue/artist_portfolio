@@ -2,6 +2,8 @@ export { default as home_left } from './images/home_left.png'
 export { default as bgsec1 } from './images/bgsec1.png'
 export { default as bgsec2 } from './images/bgsec2.png'
 export { default as prof_pic } from './images/madoc.png'
+export { default as contact_bg } from './images/contact_bg.png'
+export { default as contact_banner } from './images/contact_banner.png'
 
 
 // arts images

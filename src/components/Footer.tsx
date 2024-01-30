@@ -21,7 +21,7 @@ const Footer: FC = () => {
           <Input id='town' label='City/Town:' placeholder='eg: California' />
           <div className="flex flex-col gap-1 sm:col-span-2">
             <label className="text-light-gold self-start" htmlFor="message">Message:</label>
-            <textarea id='message' rows={5} name='message' className='flex w-full placeholder:text-stone-800 dark:placeholder:text-stone-500 rounded-sm border-b bg-black/50 dark:bg-black/20 px-3 py-2 text-sm  placeholder:text-muted-foreground focus:bg-stone-500/10 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50' placeholder='Write your message' />
+            <textarea id='message' rows={5} name='message' className='flex w-full placeholder-stone-800 transition-all duration-300 dark:placeholder-stone-500 rounded-sm border-b bg-black/50 dark:bg-black/20 px-3 py-2 text-sm focus:bg-stone-500/10 dark:focus:bg-white/10 dark:focus-active:bg-white/10 dark:focus:backdrop-blur-xl outline-none focus:outline-none disabled:cursor-not-allowed disabled:opacity-50' placeholder='Write your message' />
           </div>
         </div>
         <button className='active:scale-95 mb-10 sm:mb-0 cursor-pointer inline-flex items-center justify-center rounded-md text-sm transition-colors bg-light-gold text-black hover:bg-dark-gold h-10 py-2 px-4 divide-x [&>*]:px-3 font-semibold divide-black'><span>Send Message</span><span className='text-xl'>&rarr;</span></button>
