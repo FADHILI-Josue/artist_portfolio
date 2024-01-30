@@ -4,14 +4,14 @@ import { Input } from './ui/Input'
 import { MdWbSunny } from 'react-icons/md'
 
 const Footer: FC = () => {
-  return <div className='min-h-[60vh] relative'>
-    <div className="absolute h-full pt-32 w-full top-0 blur-3xl opacity-30 left-0 flex items-center justify-between">
-      <div className="shrink-0 w-64 ml-[20%] translate-y-20 bg-light-gold h-64 blur-3xl rounded-full"></div>
-      <div className="shrink-0 w-32 mr-[10%] bg-light-gold h-32 rounded-full blur-3xl"></div>
+  return <div className='min-h-[60vh] mt-16 relative'>
+    <div className="absolute h-full w-full top-0 blur-3xl opacity-20 left-0 flex items-center justify-between">
+      <div className="shrink-0 w-[30rem] ml-[15%] translate-y-20 bg-light-gold h-[30rem] opacity-60 blur-3xl rounded-full"></div>
+      <div className="shrink-0 w-96 mr-[10%] bg-light-gold h-96 rounded-full opacity-50 blur-3xl"></div>
     </div>
-    <div className="relative backdrop-blur-3xl flex flex-col pt-32 h-full">
+    <div className="relative backdrop-blur-3xl flex flex-col h-full">
       <MaxWidthWrapper className='flex flex-col items-center text-center h-full'>
-        <h1 className='my-20 text-3xl font-serif'>CONTACT <span className='text-light-gold [text-shadow:1px_1px_30px_var(--tw-shadow-color)] shadow-light-gold/80'>ME</span></h1>
+        <h1 className='my-10 text-3xl font-serif'>CONTACT <span className='text-light-gold [text-shadow:1px_1px_30px_var(--tw-shadow-color)] shadow-light-gold/80'>ME</span></h1>
         <p className='text-lg'>My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to grapple with the
           intangible, and to find solace in the shared quest to understand 	the immeasurable dimensions of being.</p>
         <div className="w-2/3 grid grid-cols-2 gap-5 my-20">

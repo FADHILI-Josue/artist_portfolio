@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { useData } from '../providers/Providers'
 import Navbar from '../components/Navbar'
-import { bgsec1, bgsec2, home_left, prof_pic } from '../assets'
+import { art1, bgsec1, bgsec2, home_left, prof_pic } from '../assets'
 import './home.css'
 import MaxWidthWrapper from '../components/MaxWidthWrapper'
 import Icons from '../components/Icons'
@@ -10,6 +10,7 @@ import { MdWbSunny } from "react-icons/md";
 import Carousel from '../components/Carousel'
 import Arts from '../components/home/Arts'
 import Footer from '../components/Footer'
+import { arts } from '../lib/constants'
 const HomePage: FC = () => {
     const { toggleMode } = useData()
     return <div className='w-full bg-black text-black dark:bg-black dark:text-white overflow-x-hidden'>
@@ -21,7 +22,7 @@ const HomePage: FC = () => {
             <div className="circle4 blur-3xl -translate-x-[110%] -translate-y-4"></div>
             <div className="circle5 blur-3xl -translate-x-[120%] translate-y-[40%]"></div>
         </div>
-        <div className="flex backdrop-blur-3xl flex-col relative">
+        <div className="flex pb-20 backdrop-blur-3xl bg-gradient-to-b from-black to-[#0C0C0C] flex-col relative">
             <div className="absolute h-screen">
                 <img src={home_left} alt="home left" className='my-32 h-2/3' />
             </div>
@@ -70,19 +71,19 @@ const HomePage: FC = () => {
                     <div className="absolute left-0 top-[20%] h-screen">
                         <img src={bgsec1} alt="home left" className='h-4/5' />
                     </div>
-                    <Arts />
+                    <Arts images={arts.slice(0,12)} />
                 </div>
                 <div className="w-full relative">
                     <div className="absolute right-0 top-[20%] h-screen">
                         <img src={bgsec2} alt="home left" className='h-4/5' />
                     </div>
-                    <Arts />
+                    <Arts images={arts.slice(12,24)} />
                 </div>
                 <div className="w-full relative">
-                    <div className="absolute left-0 top-[20%] h-screen">
+                    <div className="absolute left-0 top-[40%] h-screen">
                         <img src={bgsec1} alt="home left" className='h-4/5' />
                     </div>
-                    <Arts />
+                    <Arts images={arts.slice(24)} />
                 </div>
             </div>
             {/* <button onClick={toggleMode}>yooo</button> */}
