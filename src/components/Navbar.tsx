@@ -1,16 +1,37 @@
 import { FC } from 'react'
 import { MdWbSunny } from 'react-icons/md'
 import { useData } from '../providers/Providers'
+import { IoMenu } from "react-icons/io5";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../components/ui/Sheet"
 
 const Navbar: FC = () => {
   const { toggleMode } = useData()
 
-  return <div className="flex w-full justify-between my-16 text-zinc-400">
-    <p>ARTIST STATEMENT</p>
-    <p>WORKS</p>
-    <h1 className='text-white font-bold text-3xl font-serif'>Madoc Pierce</h1>
-    <p>CONTACT</p>
-    <button className='bg-stone-300/40 h-8 w-8 flex items-center justify-center rounded-full' onClick={()=>toggleMode()}><MdWbSunny size={20} color='white' /></button>
+  return <div className="flex w-full justify-end md:justify-between my-16 text-zinc-700 font-semibold dark:text-zinc-400">
+    <p className='hidden md:inline-block '>ARTIST STATEMENT</p>
+    <p className='hidden md:inline-block '>WORKS</p>
+    <h1 className='hidden md:inline-block font-bold text-3xl font-serif'>Madoc Pierce</h1>
+    <p className='hidden md:inline-block '>CONTACT</p>
+    <button className='hidden md:flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white' /></button>
+    <Sheet>
+      <SheetTrigger className='inline-block z-50 md:hidden'><IoMenu className='h-7 w-7' onClick={() => console.log("clicked")} /></SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>Are you absolutely sure?</SheetTitle>
+          <SheetDescription>
+            This action cannot be undone. This will permanently delete your account
+            and remove your data from our servers.
+          </SheetDescription>
+        </SheetHeader>
+      </SheetContent>
+    </Sheet>
   </div>
 }
 
