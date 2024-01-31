@@ -43,3 +43,7 @@ export { default as a27 } from './images/a27.png'
 export { default as a28 } from './images/a28.png'
 export { default as a29 } from './images/a29.png'
 export { default as a30 } from './images/a30.png'
+
+
+
+
