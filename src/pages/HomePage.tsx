@@ -48,8 +48,8 @@ const HomePage: FC = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full flex justify-center items-center">
-                            <img src={prof_pic} alt="madoc pierce" className='w-full object-contain' />
+                        <div className="w-full mt-10 flex justify-center items-center">
+                            <img src={prof_pic} alt="madoc pierce" className='w-full sm:w-2/3 md:w-full object-contain' />
                         </div>
                     </div>
                 </MaxWidthWrapper>

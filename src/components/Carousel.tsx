@@ -1,71 +1,66 @@
-import { FC, useState } from 'react'
-import { art1, art2, art3 } from '../assets'
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import React, { FC, useState } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { art1, art2, art3 } from '../assets';
 
 
-interface CarouselProps {
+interface CarouselProps {}
 
-}
-
-const images = [
-    art1,
-    art2,
-    art3,
-    art1,
-    art2,
-    art3,
-    art1,
-    art2,
-    art3,
-]
+const images = [art1, art2, art3, art1, art2, art3];
 
 const Carousel: FC<CarouselProps> = () => {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [length] = useState(images.length - 2)
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchPosition, setTouchPosition] = useState({ x: null, y: null });
 
-
-    const prev = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(prevState => prevState - 1)
-        }
+  const prev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prevIndex) => prevIndex - 1);
     }
-    const next = () => {
-        if (currentIndex < (length - 1)) {
-            setCurrentIndex(prevState => prevState + 1)
-        }
+  };
+
+  const next = () => {
+    if (currentIndex < images.length -2 - 1) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
     }
-    const [touchPosition, setTouchPosition] = useState(null)
-    // ...
-    const handleTouchStart = (e) => {
-        const touchDown = e.touches[0].clientX
-        setTouchPosition(touchDown)
-        console.log(touchDown)
-    }
+  };
 
-    const handleTouchMove = (e) => {
-        const touchDown = touchPosition
+  const handleStart = (e) => {
+    const touch = e.touches ? e.touches[0] : e;
+    setTouchPosition({ x: touch.clientX, y: touch.clientY });
+  };
 
-        if (touchDown === null) {
-            return
-        }
-
-        const currentTouch = e.touches[0].clientX
-        const diff = touchDown - currentTouch
-
-        if (diff > 5) {
-            next()
-        }
-
-        if (diff < -5) {
-            prev()
-        }
-
-        setTouchPosition(null)
+  const handleMove = (e) => {
+    if (touchPosition.x === null || touchPosition.y === null) {
+      return;
     }
 
-    return <div className='my-20'>
-        <div onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} className="overflow-hidden relative mx-auto">
+    const currentTouch = e.touches ? e.touches[0] : e;
+    const diffX = touchPosition.x - currentTouch.clientX;
+
+    if (Math.abs(diffX) > 5) {
+      if (diffX > 0) {
+        next();
+      } else {
+        prev();
+      }
+      setTouchPosition({ x: null, y: null });
+    }
+  };
+
+  const handleEnd = () => {
+    setTouchPosition({ x: null, y: null });
+  };
+
+  return <div className="my-20">
+      <div
+        onTouchStart={handleStart}
+        onTouchMove={handleMove}
+        onTouchEnd={handleEnd}
+        onMouseDown={handleStart}
+        onMouseMove={handleMove}
+        onMouseUp={handleEnd}
+        className="overflow-hidden relative mx-auto"
+        style={{ userSelect: 'none' }}
+      >
             <div className="relative h-full inline-flex overflow-hidden w-full gap-2">
                 {
                     images?.map((_, i) =>
