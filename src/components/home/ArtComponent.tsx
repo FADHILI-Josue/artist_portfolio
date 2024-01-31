@@ -1,23 +1,25 @@
 import { FC, useRef } from 'react'
 import { cn } from '../../lib/utils'
+import { IArt } from '../../lib/constants'
+import { Link } from 'react-router-dom'
 
 interface ArtComponentProps {
-  image?: string,
-  desc: string,
-  isMain?: boolean
+  art?: IArt,
+  isMain?: boolean,
+  id: number
 }
 
-const ArtComponent: FC<ArtComponentProps> = ({image, desc, isMain=false}) => {
+const ArtComponent: FC<ArtComponentProps> = ({art,id, isMain=false}) => {
     const imgRef = useRef<HTMLImageElement | null>(null)
 
-    if (!image) return null
-  return <div className={cn("h-92 rounded-md bg-white flex flex-col", {"min-h-72 sm:col-span-2 sm:row-span-2": isMain})}>
-    <div className="h-full">
-        <img ref={imgRef} src={image} alt="art" className='h-full w-full object-cover' />
+    if (!art) return null
+  return <Link to={`/art/${id}`} className={cn("h-92 group rounded-md bg-white flex flex-col", {"min-h-72 sm:col-span-2 sm:row-span-2": isMain})}>
+    <div className="h-full overflow-hidden">
+        <img ref={imgRef} src={art.image} alt="art" className='h-full group-hover:scale-110 w-full transition-all duration-300 object-cover' />
     </div>
         
-    <p className='text-black p-3 font-medium text-xs sm:text-base sm:font-semibold'>{desc}</p>
-  </div>
+    <p className='text-black p-3 font-medium text-xs sm:text-base sm:font-semibold'>{art.medium? art.medium : 'medium'}</p>
+  </Link>
 }
 
 export default ArtComponent
