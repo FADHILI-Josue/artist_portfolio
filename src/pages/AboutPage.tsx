@@ -39,9 +39,9 @@ const AboutPage = () => {
                         <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
                     </div>
-                    <div className="w-full px-2 text-sm sm:text-xl backdrop-blur-3xl [&>p]:my-5 sm:px-10 py-20 dark:bg-[#281c0c]">
+                    <div className="w-full text-center sm:text-left px-2 text-sm sm:text-xl backdrop-blur-3xl [&>p]:my-5 sm:px-10 py-20 dark:bg-[#281c0c]">
                         <div className="sm:float-left sm:mx-5 sm:pt-12">
-                            <img src={prof_pic} alt="profile" className='w-72 md:w-80 border lg:w-[35rem] object-contain' />
+                            <img src={prof_pic} alt="profile" className='w-72 mx-auto sm:mx-0 md:w-80 lg:w-[35rem] object-contain' />
                         </div>
                         <RiDoubleQuotesL className='text-light-gold' />
                         <p>In the alchemy of my art, I seek to	map the uncharted territories of the human experience. Blank sheets	become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of	feeling and the resonance of mental states. I labor to give shape to the	shapeless-to fashion a visual lexicon for the ineffable nuances of consciousness</p>
