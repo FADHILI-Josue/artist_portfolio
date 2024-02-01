@@ -22,7 +22,7 @@ const AboutPage = () => {
             <div className="circle5 blur-3xl right-0 -translate-x-[110%] bottom-0 translate-y-32"></div>
         </div>
         <div className="flex h-full pb-20 backdrop-blur-3xl bg-gradient-to-b flex-col relative">
-            <div className="absolute top-36 z-0 h-screen">
+            <div className="absolute -left-52 top-36 z-0 h-screen">
                 <img src={home_left} alt="home left" className='h-1/2 sm:h-2/3' />
             </div>
             <div className="absolute z-0 rotate-180 right-0 h-screen bottom-36">
@@ -40,8 +40,8 @@ const AboutPage = () => {
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
                     </div>
                     <div className="w-full px-2 text-sm sm:text-xl backdrop-blur-3xl [&>p]:my-5 sm:px-10 py-20 bg-[#281c0c]">
-                        <div className="sm:float-left sm:m-5">
-                            <img src={prof_pic} alt="profile" className='w-72 md:w-80 lg:w-[35rem] object-contain' />
+                        <div className="sm:float-left sm:mx-5 sm:pt-12">
+                            <img src={prof_pic} alt="profile" className='w-72 md:w-80 border lg:w-[35rem] object-contain' />
                         </div>
                         <RiDoubleQuotesL className='text-light-gold' />
                         <p>In the alchemy of my art, I seek to	map the uncharted territories of the human experience. Blank sheets	become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of	feeling and the resonance of mental states. I labor to give shape to the	shapeless-to fashion a visual lexicon for the ineffable nuances of consciousness</p>
@@ -50,6 +50,7 @@ const AboutPage = () => {
                         <p>These works, like echoes in a void, attempt to visualize the vibrations of thought and the frequency of feeling. They are both the echo and the source, the question and the answer. They reside in the interstices of understanding, wavering between what is known and the vast expanse of the unknown.</p>
                         <p>As an artist, I am driven by the pursuit of the intangible, conjuring forth the abstracted realities that dwell just beyond the periphery of perception. My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to grapple with the intangible, and to find solace in the shared quest to understand the immeasurable dimensions of being.</p>
                         <RiDoubleQuotesR className='text-light-gold' />
+
                     </div>
                 </div>
             </div>
