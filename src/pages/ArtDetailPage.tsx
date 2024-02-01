@@ -33,7 +33,7 @@ const ArtDetailPage = () => {
                 <img src={contact_bg} alt="home left" className='object-cover h-full w-full' />
             </div>
             <div className="w-full bg-white dark:bg-transparent">
-                <MaxWidthWrapper className='relative z-20'>
+                <MaxWidthWrapper className='relative z-20 max-w-screen-2xl'>
                     <div className="w-full flex my-10 justify-between items-center">
                         <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
