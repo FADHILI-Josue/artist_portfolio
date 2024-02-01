@@ -5,7 +5,7 @@ import { Input } from '../components/ui/Input';
 import { useData } from '../providers/Providers';
 import { MdWbSunny } from 'react-icons/md';
 import { useNavigate, useParams } from "react-router-dom";
-import { arts } from '../lib/constants';
+// import { arts } from '../lib/constants';
 import { useEffect } from 'react';
 
 
@@ -15,7 +15,7 @@ const ArtDetailPage = () => {
     const { id } = useParams<{id:string}>();
     const {toggleMode} = useData()
     useEffect(()=>{
-        if(isNaN(Number(id)) || !arts[Number(id)]) navigate('/not-found')
+        // if(isNaN(Number(id)) || !arts[Number(id)]) navigate('/not-found')
     },[id, navigate])
     return <div className='w-full bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
         <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 -left-[15%] flex items-start">
@@ -40,12 +40,12 @@ const ArtDetailPage = () => {
                     </div>
                     <div className="w-full flex flex-col sm:flex-row bg-[#281c0c]/30">
                         <div className="flex-1">
-                            <img src={arts[Number(id)]?.image} alt="contact banner" className='w-full h-full object-cover' />
+                            {/* <img src={arts[Number(id)]?.image} alt="contact banner" className='w-full h-full object-cover' /> */}
                         </div>
                         <div className="flex-1 text-sm sm:text-base py-10 sm:px-10 lg:px-20 space-y-3 sm:space-y-6">
-                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='text-stone-300'>Title:</span> <span className='font-medium sm:font-bold'>{arts[Number(id)]?.title}</span></div>
+                            {/* <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='text-stone-300'>Title:</span> <span className='font-medium sm:font-bold'>{arts[Number(id)]?.title}</span></div>
                             <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='text-stone-300'>Size:</span> <span className='font-medium sm:font-bold'>{arts[Number(id)]?.size}</span></div>
-                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='text-stone-300'>Medium:</span> <span className='font-medium sm:font-bold'>{arts[Number(id)]?.medium}</span></div>
+                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='text-stone-300'>Medium:</span> <span className='font-medium sm:font-bold'>{arts[Number(id)]?.medium}</span></div> */}
                             <div className="rounded-md bg-stone-800/50 px-6 pt-4 pb-7">
                                 <h1 className='border-b border-b-stone-400 py-2 font-semibold'>Inquire about availability:</h1>
                                 <form className='space-y-7 py-10'>

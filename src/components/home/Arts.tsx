@@ -1,10 +1,11 @@
 import { FC } from 'react'
 import MaxWidthWrapper from '../MaxWidthWrapper'
 import ArtComponent from './ArtComponent'
-import { IArt } from '../../lib/constants'
+// import { IArt } from '../../lib/constants'
 
 interface ArtsProps {
-    images: IArt[]
+    images: number[]
+    // images: IArt[]
 }
 
 const Arts: FC<ArtsProps> = ({images}) => {
