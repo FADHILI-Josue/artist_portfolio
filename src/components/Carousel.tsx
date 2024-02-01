@@ -65,7 +65,7 @@ const Carousel: FC<CarouselProps> = () => {
                 {
                     images?.map((_, i) =>
                         <div key={i} className='hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                            <div className="h-[50vw] lg:h-[35rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i]} alt="arts" className='w-full h-full object-cover' /></div>
+                            <div className="h-[50vw] lg:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i]} alt="arts" className='w-full h-full object-contain' /></div>
                             <p className=" font-thin px-2 text-xs sm:px-12 w-full sm:text-sm md:text-base text-black my-4 sm:font-medium md:font-semibold">
                                 4th-Dimension no.1
                             </p>

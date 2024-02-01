@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import MaxWidthWrapper from '../MaxWidthWrapper'
 import ArtComponent from './ArtComponent'
-import { IArt } from '../../lib/constants'
+import { IArt, arts } from '../../lib/constants'
 
 interface ArtsProps {
     images: IArt[]
@@ -9,7 +9,8 @@ interface ArtsProps {
 
 const Arts: FC<ArtsProps> = ({images}) => {
     return <MaxWidthWrapper className='grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-5'>
-        {images.map((art, i) => <ArtComponent key={i} id={i} art={art} isMain={i === 3 || i === 10} />)}
+        
+        {images.map((art, i) => <ArtComponent key={i} id={arts.findIndex((e)=>e.title == images[i].title)} art={art} isMain={i === 3 || i === 10} />)}
     </MaxWidthWrapper>
 }
 
