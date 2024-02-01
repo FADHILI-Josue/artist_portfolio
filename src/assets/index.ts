@@ -13,7 +13,7 @@ export { default as contact_banner } from './images/contact_banner.png'
 // export { default as art3 } from './images/art3.png'
 
 
-// export { default as a1 } from './images/Artworks 2023/4th-Dimension no.1.jpg'
+export { default as a1 } from './images/Artworks 2023/4th-Dimension no.1.jpg'
 // export { default as a2 } from './images/Artworks 2023/4th-Dimension no.4.jpg'
 // export { default as a3 } from './images/Artworks 2023/4th-Dimension no.5.jpg'
 // export { default as a4 } from './images/Artworks 2023/4th-Dimension no.5.jpg'
