@@ -30,7 +30,7 @@ const Navbar: FC = () => {
   return <div className="flex w-full justify-end md:justify-between my-16 text-zinc-700 font-semibold dark:text-zinc-400">
     <Link to={'/about'} className={cn('hidden md:inline-block', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>
     <Link to={'/'} className='hidden md:inline-block'>WORKS</Link>
-    <Link to={'/'} className='hidden md:inline-block font-bold text-3xl font-serif'>Madoc Pierce</Link>
+    <Link to={'/'} className='hidden md:inline-block font-bold text-3xl font-[nanum,sans-serif] uppercase'>Madoc Pierce</Link>
     <Link to={'/contact'} className='hidden md:inline-block '>CONTACT</Link>
     <button className='hidden md:flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
     <Sheet>
