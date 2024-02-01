@@ -4,11 +4,10 @@ import { bgsec1, bgsec2, home_left, prof_pic } from '../assets'
 import './home.css'
 import MaxWidthWrapper from '../components/MaxWidthWrapper'
 import Icons from '../components/Icons'
-// import Footer from '../components/Footer'
 import Carousel from '../components/Carousel'
 import Arts from '../components/home/Arts'
 import Footer from '../components/Footer'
-// import { arts } from '../lib/constants'
+import { arts } from '../lib/constants'
 import { Link } from 'react-router-dom'
 const HomePage: FC = () => {
     return <div className='w-full bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
@@ -68,19 +67,19 @@ const HomePage: FC = () => {
                     <div className="absolute left-0 top-[20%] h-screen">
                         <img src={bgsec1} alt="home left" className='hidden sm:block h-4/5' />
                     </div>
-                    {/* <Arts images={arts.slice(0, 12)} /> */}
+                    <Arts images={arts.slice(0, 12)} />
                 </div>
                 <div className="w-full relative">
                     <div className="absolute right-0 top-[20%] h-screen">
                         <img src={bgsec2} alt="home left" className='hidden sm:block h-4/5' />
                     </div>
-                    {/* <Arts images={arts.slice(12, 24)} /> */}
+                    <Arts images={arts.slice(12, 24)} />
                 </div>
                 <div className="w-full relative">
                     <div className="absolute left-0 top-[40%] h-screen">
                         <img src={bgsec1} alt="home left" className='hidden sm:block h-4/5' />
                     </div>
-                    <Arts images={[76,7]} />
+                    <Arts images={arts.slice(24)} />
                 </div>
             </div>
         </div>
