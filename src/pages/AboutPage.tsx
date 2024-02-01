@@ -6,6 +6,7 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { MdWbSunny } from 'react-icons/md';
 import { useData } from '../providers/Providers';
+import MaxWidthWrapper from '../components/MaxWidthWrapper';
 
 
 const AboutPage = () => {
@@ -28,10 +29,12 @@ const AboutPage = () => {
                 <img src={bgsec1} alt="home left" className=' h-1/2 sm:h-2/3' />
             </div>
             <div className="w-full relative z-10 h-full">
-                <div className='mx-auto w-full sm:max-w-screen-2xl px-4 md:px-20 text-black dark:text-white'>
+                <MaxWidthWrapper>
                     <div className="w-full hidden md:block">
                         <Navbar />
                     </div>
+                </MaxWidthWrapper>
+                <div className='mx-auto w-full sm:max-w-screen-2xl px-4 md:px-20 text-black dark:text-white'>
                     <div className="w-full flex md:hidden my-10 justify-between items-center">
                         <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
