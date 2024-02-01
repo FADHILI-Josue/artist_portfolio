@@ -18,7 +18,7 @@ const ArtComponent: FC<ArtComponentProps> = ({art,id, isMain=false}) => {
         <img ref={imgRef} src={art.image} alt="art" className='h-full group-hover:scale-110 w-full transition-all duration-300 object-cover' />
     </div>
         
-    <p className='text-black p-3 font-medium text-xs sm:text-base sm:font-semibold'>{art.medium? art.medium : 'medium'}</p>
+    <p className='text-black p-3 font-medium text-xs sm:text-base sm:font-semibold'>{art.medium? art.title : 'medium'}</p>
   </Link>
 }
 

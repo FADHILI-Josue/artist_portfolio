@@ -26,7 +26,7 @@ export { default as a10 } from './images/artworks 2023/Consciousness no.3.jpg'
 export { default as a11 } from './images/artworks 2023/Lungs.jpg'
 export { default as a12 } from './images/artworks 2023/Pathways no.1.jpg'
 export { default as a13 } from './images/artworks 2023/Pathways no.5.jpg'
-export { default as a14 } from './images/artworks 2023/Society no.2.jpg'
+export { default as a14 } from './images/artworks 2023/Society no.1.jpg'
 export { default as a15 } from './images/artworks 2023/Society no.2.jpg'
 export { default as a16 } from './images/artworks 2023/Tongue.jpg'
 export { default as a17 } from './images/artworks 2023/Transcendence no.1.jpg'
@@ -45,11 +45,3 @@ export { default as a29 } from './images/artworks 2023/Spine.jpg'
 export { default as a30 } from './images/artworks 2023/Train-Ride.jpg'
 export { default as a31 } from './images/artworks 2023/wolf.JPG'
 export { default as a32 } from './images/artworks 2023/Zentangle.JPG'
-
-
-// // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// // @ts-ignore
-// export { default as a33 } from './images/artworks 2023/My Hand no.1.heic'
-// // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// // @ts-ignore
-// export { default as a34 } from './images/artworks 2023/My Hand no.2.heic'
