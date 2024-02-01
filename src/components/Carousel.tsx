@@ -69,7 +69,7 @@ const Carousel: FC<CarouselProps> = () => {
           images?.map((_, i) =>
             <div key={i} className={cn('hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full', { 'w-1/2': isSmallScreen })} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
               <div className="h-[50vw] lg:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i].image} alt="arts" className='w-full h-full object-contain' /></div>
-              <p className=" font-thin text-center text-xs w-full sm:text-sm md:text-base text-black my-4 sm:font-medium md:font-semibold">
+              <p className="h-full font-thin text-center text-xs w-full sm:text-sm md:text-base text-black my-4 sm:font-medium md:font-semibold">
                 {images[i].title ?? "image title"}
               </p>
             </div>

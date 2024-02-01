@@ -1,4 +1,4 @@
-import { a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a31, a32, a12, a13, a14, a15, a16 } from "../assets";
+import { a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a31, a32, a12, a13, a14, a15, a16, a30 } from "../assets";
 export interface IArt {
     title: string;
     image: string;
@@ -154,7 +154,7 @@ export const arts: IArt[] = [
         title: "Tongue"
     },
     {
-        image: a16,
+        image: a30,
         size: "16 x 20",
         medium: "Micron Pen",
         title: "Train Ride"
@@ -178,7 +178,7 @@ export const arts: IArt[] = [
         title: "Transcendence no.5"
     },
     {
-        image: a20,
+        image: a31,
         size: "53.5 x 70",
         medium: "Digital Mixed Media",
         title: "Unity no.2"
@@ -208,16 +208,4 @@ export const arts: IArt[] = [
         medium: "Micro Pen",
         title: "Zentangle"
     },
-    {
-        image: a31,
-        size: "",
-        medium: "",
-        title: ""
-    },
-    {
-        image: a32,
-        size: "",
-        medium: "",
-        title: ""
-    }
 ]

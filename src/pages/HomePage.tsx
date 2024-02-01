@@ -28,7 +28,7 @@ const HomePage: FC = () => {
                     <Navbar />
                     <div className="flex flex-col md:flex-row items-center mb-10 sm:mb-20">
                         <div className="space-y-20 self-end text-center">
-                            <h1 className='font-bold text-3xl sm:text-5xl bg-gradient-to-r from-black to-stone-500 dark:from-white dark:to-stone-700 inline-block text-transparent bg-clip-text'>Madoc Pierce</h1>
+                            <h1 className='font-extrabold text-3xl sm:text-5xl bg-gradient-to-r from-black to-stone-500 dark:from-white dark:to-stone-700 inline-block text-transparent bg-clip-text'>Madoc Pierce</h1>
                             <p>Blank sheets become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of feeling and the resonance of mental states.</p>
                             <div className="flex flex-col sm:flex-row items-center gap-14 sm:gap-4">
                                 <button className='active:scale-95 sm:mr-7 cursor-pointer inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-light-gold text-white dark:text-black hover:bg-dark-gold h-10 py-6 px-10'>Contact Me</button>
