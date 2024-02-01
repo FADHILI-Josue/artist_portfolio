@@ -27,14 +27,14 @@ const Navbar: FC = () => {
     setActive(path)
   }, [router]);
 
-  return <div className="flex w-full justify-end md:justify-between my-16 text-zinc-700 font-semibold dark:text-zinc-400">
+  return <div className="flex w-full justify-end md:justify-between my-16 text-zinc-700 dark:text-zinc-400">
     <Link to={'/about'} className={cn('hidden md:inline-block', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>
     <Link to={'/'} className='hidden md:inline-block'>WORKS</Link>
-    <Link to={'/'} className='hidden md:inline-block font-bold text-3xl font-[nanum,sans-serif] uppercase'>Madoc Pierce</Link>
-    <Link to={'/contact'} className='hidden md:inline-block '>CONTACT</Link>
-    <button className='hidden md:flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
+    <Link to={'/'} className='hidden md:inline-block dark:text-white text-black text-3xl font-[nanum,sans-serif] uppercase'>Madoc Pierce</Link>
+    <Link to={'/contact'} className='hidden md:inline-block'>CONTACT</Link>
+    <button className='hidden md:flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white dark:bg-black/60 bg-black/10 rounded-full w-full h-full p-2 hover:scale-110 transition-all duration-200' /></button>
     <Sheet>
-      <SheetTrigger className='inline-block z-50 md:hidden'><IoMenu className='h-7 w-7' onClick={() => console.log("clicked")} /></SheetTrigger>
+      <SheetTrigger className='inline-block dark:bg-black/30 z-50 md:hidden'><IoMenu className='h-7 w-7' /></SheetTrigger>
       <SheetContent className="bg-white text-black dark:text-white dark:bg-black">
         <SheetHeader>
           <SheetTitle>Madoc Pierce, artist</SheetTitle>
