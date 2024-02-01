@@ -1,6 +1,8 @@
 import { FC, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { art1, art2, art3 } from '../assets';
+import { useIsSmallScreen } from '../hooks/isXscreen';
+import { cn } from '../lib/utils';
 
 
 interface CarouselProps {}
@@ -8,6 +10,7 @@ interface CarouselProps {}
 const images = [art1, art2, art3, art1, art2, art3];
 
 const Carousel: FC<CarouselProps> = () => {
+  const isSmallScreen = useIsSmallScreen();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchPosition, setTouchPosition] = useState({ x: null, y: null });
 
@@ -18,7 +21,7 @@ const Carousel: FC<CarouselProps> = () => {
   };
 
   const next = () => {
-    if (currentIndex < images.length -2 - 1) {
+    if (currentIndex < images.length - (isSmallScreen ? 1 : 2) - 1) {
       setCurrentIndex((prevIndex) => prevIndex + 1);
     }
   };
@@ -64,7 +67,7 @@ const Carousel: FC<CarouselProps> = () => {
             <div className="relative h-full inline-flex overflow-hidden w-full gap-2">
                 {
                     images?.map((_, i) =>
-                        <div key={i} className='hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                        <div key={i} className={cn('hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full', {'w-1/2': isSmallScreen})} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                             <div className="h-[50vw] lg:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i]} alt="arts" className='w-full h-full object-contain' /></div>
                             <p className=" font-thin text-center text-xs w-full sm:text-sm md:text-base text-black my-4 sm:font-medium md:font-semibold">
                                 4th-Dimension no.1
