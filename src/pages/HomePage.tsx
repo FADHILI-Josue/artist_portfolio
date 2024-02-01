@@ -10,23 +10,24 @@ import Footer from '../components/Footer'
 import { arts } from '../lib/constants'
 import { Link } from 'react-router-dom'
 const HomePage: FC = () => {
-    return <div className='w-full bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
-        <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 -left-[15%] flex items-start">
-            <div className="circle"></div>
-            <div className="circle2 blur-3xl -translate-x-52 translate-y-40"></div>
-            <div className="circle3 blur-3xl -translate-x-[120%] translate-y-32"></div>
-            <div className="circle4 blur-3xl -translate-x-[110%] -translate-y-4"></div>
-            <div className="circle5 blur-3xl -translate-x-[120%] translate-y-[40%]"></div>
+    // return <div className='w-full bg-black text-black dark:bg-black dark:text-white overflow-x-hidden'>
+    return <div className='w-full bg-black min-h-screen g-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
+        <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 flex items-start">
+            <div className="circle absolute -left-[20%]"></div>
+            <div className="circle2 blur-3xl -translate-x-32 sm:translate-x-20 translate-y-40"></div>
+            <div className="circle3 blur-3xl -translate-x-32 translate-y-32"></div>
+            <div className="circle4 blur-3xl -translate-x-52 -translate-y-4"></div>
+            <div className="circle5 blur-3xl -translate-x-[90%] translate-y-[40%]"></div>
         </div>
         <div className="flex pb-20 backdrop-blur-3xl bg-gradient-to-b flex-col relative">
             <div className="absolute h-screen">
-                <img src={home_left} alt="home left" className='my-32 h-1/2 sm:h-2/3' />
+                <img src={home_left} alt="home left" className='my-32 h-1/3 sm:h-2/3' />
             </div>
             <div className="w-full bg-white dark:bg-transparent">
                 <MaxWidthWrapper className='relative z-20'>
                     <Navbar />
                     <div className="flex flex-col md:flex-row items-center mb-10 sm:mb-20">
-                        <div className="space-y-20 self-end">
+                        <div className="space-y-20 self-end text-center">
                             <h1 className='font-bold text-3xl sm:text-5xl bg-gradient-to-r from-black to-stone-500 dark:from-white dark:to-stone-700 inline-block text-transparent bg-clip-text'>Madoc Pierce</h1>
                             <p>Blank sheets become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of feeling and the resonance of mental states.</p>
                             <div className="flex flex-col sm:flex-row items-center gap-14 sm:gap-4">
