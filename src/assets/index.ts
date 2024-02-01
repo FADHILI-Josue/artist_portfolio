@@ -1,4 +1,5 @@
 export { default as home_left } from './images/home_left.png'
+export { default as detail_left } from './images/detail_left.png'
 export { default as bgsec1 } from './images/bgsec1.png'
 export { default as bgsec2 } from './images/bgsec2.png'
 export { default as prof_pic } from './images/madoc.png'

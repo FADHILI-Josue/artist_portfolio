@@ -1,5 +1,5 @@
 import './home.css'
-import { contact_bg, home_left } from '../assets'
+import { detail_left, home_left } from '../assets'
 import MaxWidthWrapper from '../components/MaxWidthWrapper';
 import { Input } from '../components/ui/Input';
 import { useData } from '../providers/Providers';
@@ -18,9 +18,9 @@ const ArtDetailPage = () => {
         if(isNaN(Number(id)) || !arts[Number(id)]) navigate('/not-found')
     },[id, navigate])
     return <div className='w-full bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
-        <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 -left-[15%] flex items-start">
-            <div className="circle"></div>
-            <div className="circle2 blur-3xl -translate-x-52 translate-y-40"></div>
+        <div className="absolute bg-black border border-black w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 flex items-start">
+            <div className="circle absolute -left-32"></div>
+            <div className="circle2 blur-3xl  sm:translate-x-12 translate-y-40"></div>
             <div className="circle3 blur-3xl -translate-x-[120%] translate-y-32"></div>
             <div className="circle4 blur-3xl -translate-x-[110%] -translate-y-4"></div>
             <div className="circle5 blur-3xl -translate-x-[120%] translate-y-[40%]"></div>
@@ -29,8 +29,8 @@ const ArtDetailPage = () => {
             <div className="absolute h-[50vh] sm:h-[90vh] scale-x-[-1] flex flex-col justify-end right-0">
                 <img src={home_left} alt="home left" className='h-1/3 sm:h-2/3' />
             </div>
-            <div className="absolute w-[20vw] flex flex-col justify-end h-[60vh] top-40 sm:top-80 left-0">
-                <img src={contact_bg} alt="home left" className='object-cover h-full w-full' />
+            <div className="absolute bottom-0 translate-y-40 sm:translate-y-32 -left-32 sm:-left-52 h-[30vh] sm:h-[80vh] top-40 sm:top-80">
+                <img src={detail_left} alt="home left" className='object-cover h-full w-full' />
             </div>
             <div className="w-full bg-white dark:bg-transparent">
                 <MaxWidthWrapper className='relative z-20 max-w-screen-2xl'>
