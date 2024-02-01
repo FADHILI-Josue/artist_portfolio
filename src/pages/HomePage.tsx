@@ -55,7 +55,7 @@ const HomePage: FC = () => {
             </div>
             <div className="w-full">
                 <MaxWidthWrapper className='text-base sm:text-lg text-center dark:bg-transparent sm:mt-32 font-serif flex flex-col items-center space-y-5'>
-                    <h1 className='text-2xl sm:text-3xl [text-shadow:var(--tw-shadow-color)_1px_1px_30px] shadow-white/80 mb-10 sm:mb-20 font-[nanum,sans-serif]'>ABOUT <span className='[text-shadow:1px_1px_30px_var(--tw-shadow-color)] text-light-gold shadow-light-gold/80'>MADOC PIERCE</span></h1>
+                    <h1 className='text-2xl sm:text-3xl [text-shadow:var(--tw-shadow-color)_1px_1px_30px] shadow-white/80 mb-10 sm:mb-20 font-[nanum,sans-serif]'>ABOUT <span className='[text-shadow:1px_1px_30px_var(--tw-shadow-color)] text-light-gold shadow-light-gold/80'>GALLERY</span></h1>
                     <p>I am driven by the pursuit of the intangible, conjuring forth the	abstracted realities that dwell just beyond the periphery of perception. My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to	grapple with the intangible, and to find solace in the shared quest to understand	the immeasurable dimensions of being.</p>
                     <p>A pixelated hive mind becomes my interlocutor and amidst the clash of our two dimensions, previously 	hidden form is discovered and extracted in ways that almost seem impossible.	By	merging and manipulating these buzzing bio-technological landscapes within the digital realm, I compose a symphony of forms that blur the lines between the virtual and the real, the conscious and the subconscious.</p>
                 </MaxWidthWrapper>
