@@ -28,7 +28,7 @@ const HomePage: FC = () => {
             <div className="absolute">
                 <img src={home_left} alt="home left" className='my-20 sm:my-48 h-[17rem] sm:h-[20rem] lg:h-[32rem]' />
             </div>
-            <div className="w-full bg-gradient-to-b from-white to-[#F4F4F4]/60 sm:bg-white/60 dark:bg-transparent">
+            <div className="w-full bg-gradient-to-b from-white to-[#F4F4F4]/60 sm:bg-white/60 dark:from-black dark:to-black">
                 <MaxWidthWrapper className='relative z-20'>
                     <Navbar />
                     <div className="flex flex-col gap-5 md:gap-20 lg:gap-32 lg:flex-row items-center mb-10 lg:mb-20">
