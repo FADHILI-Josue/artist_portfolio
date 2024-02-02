@@ -27,7 +27,7 @@ const Navbar: FC = () => {
     setActive(path)
   }, [router]);
 
-  return <div className="flex w-full justify-end md:justify-between my-16 text-zinc-700 dark:text-zinc-400">
+  return <div className="flex w-full justify-end md:justify-between my-10 text-zinc-700 dark:text-zinc-400">
     <Link to={'/about'} className={cn('hidden md:inline-block', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>
     <Link to={'/'} className='hidden md:inline-block'>WORKS</Link>
     <Link to={'/'} className='hidden md:inline-block dark:text-white text-black text-3xl font-[nanum,sans-serif] uppercase'>Madoc Pierce</Link>

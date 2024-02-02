@@ -10,8 +10,7 @@ import Footer from '../components/Footer'
 import { arts } from '../lib/constants'
 import { Link } from 'react-router-dom'
 const HomePage: FC = () => {
-    // return <div className='w-full bg-black text-black dark:bg-black dark:text-white overflow-x-hidden'>
-    return <div className='w-full bg-black min-h-screen g-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
+    return <div className='w-full  min-h-screen bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
         <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 flex items-start">
             <div className="circle absolute -left-[20%]"></div>
             <div className="circle2 blur-3xl -translate-x-32 sm:translate-x-20 translate-y-40"></div>
