@@ -22,7 +22,7 @@ const AboutPage = () => {
             <div className="circle5 blur-3xl right-0 -translate-x-[110%] bottom-0 translate-y-32"></div>
         </div>
         <div className="flex h-full pb-20 backdrop-blur-3xl bg-gradient-to-b flex-col relative">
-            <div className="absolute -left-52 top-36 z-0 h-screen">
+            <div className="absolute -left-52 top-56 z-0 h-screen">
                 <img src={home_left} alt="home left" className='h-1/2 sm:h-2/3' />
             </div>
             <div className="absolute z-0 rotate-180 right-0 h-screen bottom-36">
@@ -34,7 +34,7 @@ const AboutPage = () => {
                         <Navbar />
                     </div>
                 </MaxWidthWrapper>
-                <div className='mx-auto w-full sm:max-w-screen-2xl px-4 md:px-20 text-black dark:text-white'>
+                <div className='mx-auto w-full sm:max-w-screen-[1600px] px-4 md:px-20 text-black dark:text-white'>
                     <div className="w-full flex md:hidden my-10 justify-between items-center">
                         <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
