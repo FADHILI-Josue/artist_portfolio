@@ -41,7 +41,6 @@ const Navbar: FC = () => {
           <div className="flex flex-col my-32 space-y-3">
             <Link to={'/about'} className={cn('underline underline-offset-2', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>
             <Link to={'/'} className='underline underline-offset-2'>WORKS</Link>
-            <Link to={'/'} className='underline underline-offset-2 font-bold text-3xl font-serif'>Madoc Pierce</Link>
             <Link to={'/contact'} className='underline underline-offset-2 '>CONTACT</Link>
           </div>
       </SheetContent>
