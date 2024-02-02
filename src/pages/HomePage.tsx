@@ -22,11 +22,11 @@ const HomePage: FC = () => {
             <div className="absolute h-screen">
                 <img src={home_left} alt="home left" className='my-32 h-1/3 sm:h-2/3' />
             </div>
-            <div className="w-full bg-white dark:bg-transparent">
+            <div className="w-full bg-white/60 dark:bg-transparent">
                 <MaxWidthWrapper className='relative z-20'>
                     <Navbar />
                     <div className="flex flex-col md:flex-row items-center mb-10 sm:mb-20">
-                        <div className="space-y-20 self-end text-center">
+                        <div className="space-y-16 sm:space-y-20 self-end text-center">
                             <h1 className='font-extrabold text-3xl sm:text-5xl bg-gradient-to-r from-black to-stone-500 dark:from-white dark:to-stone-700 inline-block text-transparent bg-clip-text'>Madoc Pierce</h1>
                             <p>Blank sheets become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of feeling and the resonance of mental states.</p>
                             <div className="flex flex-col sm:flex-row items-center gap-14 sm:gap-4">
@@ -62,7 +62,10 @@ const HomePage: FC = () => {
             </div>
             <Carousel />
             <div className="flex flex-col gap-5">
-                    <h1 className='text-2xl justify-self-center mx-auto sm:text-3xl [text-shadow:1px_1px_50px_var(--tw-shadow-color)] text-light-gold shadow-light-gold mb-10 sm:mb-20 font-[nanum,sans-serif]'>GALLERY</h1>
+                <MaxWidthWrapper className='flex flex-col text-center w-full gap-10'>
+                    <h1 className='text-2xl justify-self-center mx-auto sm:text-3xl [text-shadow:1px_1px_50px_var(--tw-shadow-color)] text-light-gold shadow-light-gold font-[nanum,sans-serif]'>GALLERY</h1>
+                    <p className='mb-10 sm:mb-20 justify-self-center mx-auto'>These works, like echoes in a void, attempt to visualize the vibrations of thought and the frequency of feeling. They are both the echo and the source, the question and the answer.</p>
+                </MaxWidthWrapper>
                 <div className="w-full relative">
                     <div className="absolute left-0 top-[20%] h-screen">
                         <img src={bgsec1} alt="home left" className='hidden sm:block h-4/5' />

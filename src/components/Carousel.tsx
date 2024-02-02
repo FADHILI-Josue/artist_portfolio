@@ -53,7 +53,7 @@ const Carousel: FC<CarouselProps> = () => {
     setTouchPosition({ x: null, y: null });
   };
 
-  return <div className="my-20">
+  return <div className="mt-20">
     <div
       onTouchStart={handleStart}
       onTouchMove={handleMove}
@@ -79,7 +79,7 @@ const Carousel: FC<CarouselProps> = () => {
       <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 bottom-0 top-0 right-0 px-2 text-xs sm:text-sm md:px-5' onClick={() => next()}><FaArrowRight /></button>
       <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 bottm-0 h-full top-0 left-0 text-xs sm:text-sm px-2 md:px-5' onClick={() => prev()}><FaArrowLeft /></button>
     </div>
-    <div className='[&>*]:bg-light-gold [&>*]:rounded-md  p-10 flex justify-center gap-2 items-center'>
+    <div className='[&>*]:bg-black dark:[&>*]:bg-light-gold [&>*]:rounded-md p-10 flex justify-center gap-2 items-center'>
       <div className="h-[0.10rem] w-3" />
       <div className="h-[0.15rem] w-4" />
       <div className="h-1 w-5" />
