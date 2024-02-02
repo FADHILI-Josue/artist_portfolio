@@ -17,7 +17,7 @@ const Footer: FC = () => {
         <div className="w-full sm:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-5 my-10 md:my-20">
           <Input id='name' label='Full Name:' placeholder='John Doe' />
           <Input id='email' label='Email:' placeholder='example@gmail.com' />
-          <Input id='phone' type='phone' label='Contact Phone:' placeholder='eg: 1123-419-345' />
+          <Input id='phone' type='phone' label='Contact Phone:' placeholder='123-456-7890 ' />
           <Input id='town' label='City/Town:' placeholder='eg: California' />
           <div className="flex flex-col gap-1 sm:col-span-2">
             <label className="text-light-gold self-start" htmlFor="message">Message:</label>

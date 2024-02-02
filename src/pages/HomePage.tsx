@@ -24,11 +24,11 @@ const HomePage: FC = () => {
             <div className="circle4 blur-3xl -translate-x-52 -translate-y-4"></div>
             <div className="circle5 blur-3xl -translate-x-[90%] translate-y-[40%]"></div>
         </div>
-        <div className="flex pb-10 md:pb-20 bg-[#F4F4F4]/60 dark:bg-gradient-to-b dark:from-black dark:to-[#0C0C0C] backdrop-blur-3xl flex-col relative">
+        <div className="flex bg-gradient-to-b from-[#F4F4F4]/60 to-white sm:bg-[#F4F4F4]/60 pb-10 md:pb-20 dark:bg-gradient-to-b dark:from-black dark:to-[#0C0C0C] backdrop-blur-3xl flex-col relative">
             <div className="absolute">
                 <img src={home_left} alt="home left" className='my-20 sm:my-48 h-[17rem] sm:h-[20rem] lg:h-[32rem]' />
             </div>
-            <div className="w-full bg-white/60 dark:bg-transparent">
+            <div className="w-full bg-gradient-to-b from-white to-[#F4F4F4]/60 sm:bg-white/60 dark:bg-transparent">
                 <MaxWidthWrapper className='relative z-20'>
                     <Navbar />
                     <div className="flex flex-col gap-5 md:gap-20 lg:gap-32 lg:flex-row items-center mb-10 lg:mb-20">
@@ -68,7 +68,7 @@ const HomePage: FC = () => {
                 </MaxWidthWrapper>
             </div>
             <Carousel />
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2 sm:gap-5">
                 <MaxWidthWrapper className='flex flex-col text-center w-full gap-10'>
                     <h1 className='text-2xl justify-self-center mx-auto sm:text-3xl [text-shadow:1px_1px_50px_var(--tw-shadow-color)] text-light-gold shadow-light-gold font-[nanum,sans-serif]'>GALLERY</h1>
                     <p className='mb-10 dark:text-slate-300 sm:mb-20 justify-self-center mx-auto'>These works, like echoes in a void, attempt to visualize the vibrations of thought and the frequency of feeling. They are both the echo and the source, the question and the answer.</p>
