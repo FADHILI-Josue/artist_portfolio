@@ -43,8 +43,8 @@ const ArtDetailPage = () => {
                             <img src={arts[Number(id)]?.image} alt="contact banner" className='w-full object-contain' />
                         </div>
                         <div className="flex-1 text-sm sm:text-base py-10 sm:px-10 lg:px-20 space-y-3 sm:space-y-6">
-                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='dark:text-stone-300'>Title:</span> <span className='indent-8 font-medium sm:font-bold'>{arts[Number(id)]?.title}</span></div>
-                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='dark:text-stone-300'>Size:</span> <span className='indent-8 font-medium sm:font-bold'>{arts[Number(id)]?.size}</span></div>
+                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='dark:text-stone-300'>Title:</span> <span className='indent-7 font-medium sm:font-bold'>{arts[Number(id)]?.title}</span></div>
+                            <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='dark:text-stone-300'>Size:</span> <span className='indent-7 font-medium sm:font-bold'>{arts[Number(id)]?.size}</span></div>
                             <div className="flex px-2 sm:px-0 items-center space-x-5 sm:space-x-10"><span className='dark:text-stone-300'>Medium:</span> <span className='font-medium sm:font-bold'>{arts[Number(id)]?.medium}</span></div>
                             <div className="rounded-md bg-black bg-opacity-[3%] dark:bg-stone-800/50 px-6 pt-4 pb-7">
                                 <h1 className='border-b border-b-stone-400 py-2 font-semibold'>Inquire about availability:</h1>
