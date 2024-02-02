@@ -6,7 +6,6 @@ import { IoMenu } from "react-icons/io5";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -35,12 +34,9 @@ const Navbar: FC = () => {
     <button className='hidden md:flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white dark:bg-black/60 bg-black/10 rounded-full w-full h-full p-2 hover:scale-110 transition-all duration-200' /></button>
     <Sheet>
       <SheetTrigger className='inline-block dark:bg-black/30 z-50 md:hidden'><IoMenu className='h-7 w-7' /></SheetTrigger>
-      <SheetContent className="bg-white text-black dark:text-white dark:bg-black">
+      <SheetContent className="bg-zinc-200 rounded-tl-3xl text-black dark:text-white dark:bg-gradient-to-br from-zinc-900 via-stone-800 to-stone-700">
         <SheetHeader>
-          <SheetTitle>Madoc Pierce, artist</SheetTitle>
-          <SheetDescription>
-            My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to grapple with the intangible, and to find solace in the shared quest to understand the immeasurable dimensions of being.
-          </SheetDescription>
+          <SheetTitle>Madoc Pierce</SheetTitle>
         </SheetHeader>
           <div className="flex flex-col my-32 space-y-3">
             <Link to={'/about'} className={cn('underline underline-offset-2', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>

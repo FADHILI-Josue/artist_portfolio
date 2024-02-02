@@ -6,6 +6,10 @@
   font-family: nanum;
   src: url('./assets/fonts/NanumMyeongjo.ttf');
 }
+@font-face {
+  font-family: niconne;
+  src: url('./assets/fonts/Niconne.ttf');
+}
 :root ,html, body {
   overflow-x: hidden;
 } 
