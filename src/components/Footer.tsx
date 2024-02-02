@@ -4,7 +4,7 @@ import { Input } from './ui/Input'
 import Navbar from './Navbar'
 
 const Footer: FC = () => {
-  return <div className='min-h-[60vh] mt-16 relative bg-white dark:bg-transparent'>
+  return <div id='contact' className='min-h-[60vh] mt-16 relative bg-white dark:bg-transparent'>
     <div className="absolute hidden dark:sm:flex h-full w-full top-0 blur-3xl opacity-20 left-0 items-center justify-between">
       <div className="shrink-0 w-[30rem] ml-[15%] translate-y-20 bg-light-gold h-[30rem] opacity-60 blur-3xl rounded-full"></div>
       <div className="shrink-0 w-96 mr-[10%] bg-light-gold h-96 rounded-full opacity-50 blur-3xl"></div>
