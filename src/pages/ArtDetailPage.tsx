@@ -50,7 +50,7 @@ const ArtDetailPage = () => {
                                 <h1 className='border-b border-b-stone-400 py-2 font-semibold'>Inquire about availability:</h1>
                                 <form className='space-y-7 py-10'>
                                     <Input label='Email' className='bg-white/70 focus:bg-black focus:bg-opacity-5 placeholder-stone-800 dark:placeholder-stone-500 dark:bg-black/20 focus:bg-stone-500/10 dark:focus:bg-white/10 border-b-stone-700 dark:border-stone-300' placeholder='example@gmail.com' />
-                                    <button className='active:scale-95 mb-10 sm:mb-0 cursor-pointer inline-flex items-center justify-center rounded-md text-sm transition-colors bg-light-gold text-white dark:text-black hover:bg-dark-gold h-10 py-2 px-4 font-semibold w-full'>Submit Message</button>
+                                    <button className='active:scale-95 mb-10 sm:mb-0 cursor-pointer inline-flex items-center justify-center rounded-md text-sm transition-colors bg-light-gold text-white dark:text-black hover:bg-dark-gold h-10 py-2 px-4 font-semibold w-full'>Email Me</button>
                                 </form>
                             </div>
                         </div>
