@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 import { arts } from '../lib/constants'
 import { Link } from 'react-router-dom'
 const HomePage: FC = () => {
-    return <div className='w-full  min-h-screen bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
+    return <div className='w-full bg-[#F4F4F4] text-black dark:bg-black dark:text-white overflow-x-hidden'>
         <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 flex items-start">
             <div className="circle absolute -left-[20%]"></div>
             <div className="circle2 blur-3xl -translate-x-32 sm:translate-x-20 translate-y-40"></div>
@@ -53,7 +53,7 @@ const HomePage: FC = () => {
                     </div>
                 </MaxWidthWrapper>
             </div>
-            <div className="w-full">
+            <div className="w-full bg-[#F4F4F4] dark:bg-transparent">
                 <MaxWidthWrapper className='text-base sm:text-lg text-center dark:bg-transparent sm:mt-32 font-serif flex flex-col items-center space-y-5'>
                     <h1 className='text-2xl sm:text-3xl [text-shadow:var(--tw-shadow-color)_1px_1px_30px] shadow-white/80 mt-10 sm:mt-0 mb-10 sm:mb-20 font-[nanum,sans-serif]'>ABOUT <span className='[text-shadow:1px_1px_30px_var(--tw-shadow-color)] text-light-gold shadow-light-gold/80'>MADOC PIERCE</span></h1>
                     <p>I am driven by the pursuit of the intangible, conjuring forth the	abstracted realities that dwell just beyond the periphery of perception. My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to	grapple with the intangible, and to find solace in the shared quest to understand	the immeasurable dimensions of being.</p>
