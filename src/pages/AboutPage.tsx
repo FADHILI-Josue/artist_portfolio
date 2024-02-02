@@ -22,10 +22,10 @@ const AboutPage = () => {
             <div className="circle5 blur-3xl -translate-x-[90%] translate-y-[40%]"></div>
         </div>
         <div className="flex h-full pb-20 backdrop-blur-3xl bg-gradient-to-b flex-col relative">
-            <div className="absolute -left-52 top-56 z-0 h-screen">
-                <img src={home_left} alt="home left" className='h-1/2 sm:h-2/3' />
+            <div className="absolute -left-32 sm:-left-52 top-56 z-0 h-screen">
+                <img src={home_left} alt="home left" className='h-1/3 sm:h-2/3' />
             </div>
-            <div className="absolute z-0 rotate-180 right-0 h-screen bottom-36">
+            <div className="absolute hidden sm:block z-0 rotate-180 right-0 h-screen bottom-36">
                 <img src={bgsec1} alt="home left" className=' h-1/2 sm:h-2/3' />
             </div>
             <div className="w-full relative z-10 h-full">
@@ -39,7 +39,7 @@ const AboutPage = () => {
                         <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
                     </div>
-                    <div className="w-full text-center sm:text-left px-2 text-sm sm:text-xl backdrop-blur-3xl sm:px-10 py-20 sm:bg-white/70 shadow-xl sm:dark:bg-[#281c0c]">
+                    <div className="w-full font-light sm:font-normal text-center sm:text-left px-2 text-sm sm:text-xl backdrop-blur-3xl sm:px-10 py-20 sm:bg-white/70 shadow-xl sm:dark:bg-[#281c0c]">
                         <div className="sm:float-left sm:mx-5 sm:pt-12">
                             <img src={prof_pic} alt="profile" className='w-72 mx-auto sm:mx-0 md:w-80 lg:w-[35rem] object-contain' />
                         </div>

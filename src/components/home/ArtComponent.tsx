@@ -13,7 +13,7 @@ const ArtComponent: FC<ArtComponentProps> = ({art,id, isMain=false}) => {
     const imgRef = useRef<HTMLImageElement | null>(null)
 
     if (!art) return null
-  return <Link to={`/art/${id}`} className={cn("h-92 group rounded-md overflow-hidden bg-white flex flex-col", {"min-h-72 sm:col-span-2 sm:row-span-2": isMain})}>
+  return <Link to={`/art/${id}`} className={cn("h-92 group rounded-md overflow-hidden bg-white shadow-xl flex flex-col", {"min-h-72 sm:col-span-2 sm:row-span-2": isMain})}>
     <div className="h-full overflow-hidden">
         <img ref={imgRef} src={art.image} alt="art" className='h-full group-hover:scale-110 w-full transition-all duration-300 object-contain' />
     </div>
