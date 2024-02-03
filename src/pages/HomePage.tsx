@@ -4,7 +4,6 @@ import { bgsec1, bgsec2, home_left, prof_pic } from '../assets'
 import './home.css'
 import MaxWidthWrapper from '../components/MaxWidthWrapper'
 import Icons from '../components/Icons'
-import Carousel from '../components/Carousel'
 import Arts from '../components/home/Arts'
 import Footer from '../components/Footer'
 import { arts } from '../lib/constants'
@@ -93,7 +92,7 @@ const HomePage: FC = () => {
                         <img src={bgsec1} alt="home left" className='hidden sm:block h-4/5' />
                     </div>
                     <div className="absolute right-0 scale-[-1] -bottom-10 h-screen">
-                        <img src={bgsec1} alt="home left" className='block h-4/5' />
+                        <img src={bgsec1} alt="home left" className='block h-1/3 sm:h-4/5' />
                     </div>
                     <Arts images={arts.slice(24)} />
                 </div>
