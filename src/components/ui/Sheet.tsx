@@ -78,7 +78,7 @@ const SheetHeader = ({
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
     className={cn(
-      "flex flex-col mt-6 font-[niconne] space-y-2 text-center sm:text-left",
+      "flex flex-col mt-6 space-y-2 text-center sm:text-left",
       className
     )}
     {...props}
