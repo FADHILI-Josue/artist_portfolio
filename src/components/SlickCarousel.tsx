@@ -13,18 +13,12 @@ const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 2,
+    centerPadding: '15%',
     centerMode: true,
     arrows: false,
     responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
         {
             breakpoint: 640,
             settings: {
@@ -63,8 +57,8 @@ const SlickCarousel: FC<SlickCarouselProps> = () => {
                     )
                 }
             </Slider>
-            <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 bottom-0 top-0 right-0 px-2 text-xs sm:text-sm md:px-5' onClick={() => next()}><FaArrowRight /></button>
-            <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 bottm-0 h-full top-0 left-0 text-xs sm:text-sm px-2 md:px-5' onClick={() => prev()}><FaArrowLeft /></button>
+            <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 top-1/2 rounded-l-sm -translate-y-1/2 right-0 text-xs sm:text-sm p-3' onClick={() => next()}><FaArrowRight /></button>
+            <button className='absolute transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 top-1/2 rounded-r-sm -translate-y-1/2 h-fit left-0 text-xs sm:text-sm p-3' onClick={() => prev()}><FaArrowLeft /></button>
         </div>
         <div className='[&>*]:bg-black dark:[&>*]:bg-light-gold [&>*]:rounded-md p-10 flex justify-center gap-2 items-center'>
             <div className="h-[0.10rem] w-3" />
