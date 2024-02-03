@@ -14,7 +14,7 @@ const AboutPage = () => {
     const { toggleMode } = useData()
 
     return <div className='w-full dark:bg-black overflow-x-hidden'>
-      <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 flex items-start">
+        <div className="absolute w-full sm:max-h-dvh overflow-hidden opacity-20 z-0 flex items-start">
             <div className="circle absolute -left-[20%]"></div>
             <div className="circle2 blur-3xl -translate-x-32 sm:translate-x-20 translate-y-40"></div>
             <div className="circle3 blur-3xl -translate-x-32 translate-y-32"></div>
@@ -44,13 +44,13 @@ const AboutPage = () => {
                             <img src={prof_pic} alt="profile" className='w-72 mx-auto sm:mx-0 md:w-80 lg:w-[35rem] object-contain' />
                         </div>
                         <div className="bg-white dark:bg-transparent [&>p]:my-5 sm:bg-transparent">
-                        <RiDoubleQuotesL className='text-light-gold' />
-                        <p>In the alchemy of my art, I seek to	map the uncharted territories of the human experience. Blank sheets	become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of	feeling and the resonance of mental states. I labor to give shape to the	shapeless-to fashion a visual lexicon for the ineffable nuances of consciousness</p>
-                        <p>My process is a pilgrimage through layers of abstraction. It begins with the 		precision of Micron pens, which lay down the skeletal outlines of loose but 		calculated composition. I subject these sketches to a digital metamorphosis that 	stretches and extends concepts to their absolute limits. Codified inputs and manipulation evolve into an extension of my linework. </p>
-                        <p>A pixelated hive mind	becomes my interlocutor and amidst the clash of our two dimensions, previously hidden form is discovered and extracted in ways that almost seem impossible.	By merging and manipulating these buzzing bio-technological landscapes within the digital realm, I compose a symphony of forms that blur the lines between the virtual and the real, the conscious and the subconscious.</p>
-                        <p>These works, like echoes in a void, attempt to visualize the vibrations of thought and the frequency of feeling. They are both the echo and the source, the question and the answer. They reside in the interstices of understanding, wavering between what is known and the vast expanse of the unknown.</p>
-                        <p>As an artist, I am driven by the pursuit of the intangible, conjuring forth the abstracted realities that dwell just beyond the periphery of perception. My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to grapple with the intangible, and to find solace in the shared quest to understand the immeasurable dimensions of being.</p>
-                        <RiDoubleQuotesR className='text-light-gold' />
+                            <RiDoubleQuotesL className='text-light-gold' />
+                            <p>In the alchemy of my art, I seek to	map the uncharted territories of the human experience. Blank sheets	become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of	feeling and the resonance of mental states. I labor to give shape to the	shapeless-to fashion a visual lexicon for the ineffable nuances of consciousness</p>
+                            <p>My process is a pilgrimage through layers of abstraction. It begins with the 		precision of Micron pens, which lay down the skeletal outlines of loose but 		calculated composition. I subject these sketches to a digital metamorphosis that 	stretches and extends concepts to their absolute limits. Codified inputs and manipulation evolve into an extension of my linework. </p>
+                            <p>A pixelated hive mind	becomes my interlocutor and amidst the clash of our two dimensions, previously hidden form is discovered and extracted in ways that almost seem impossible.	By merging and manipulating these buzzing bio-technological landscapes within the digital realm, I compose a symphony of forms that blur the lines between the virtual and the real, the conscious and the subconscious.</p>
+                            <p>These works, like echoes in a void, attempt to visualize the vibrations of thought and the frequency of feeling. They are both the echo and the source, the question and the answer. They reside in the interstices of understanding, wavering between what is known and the vast expanse of the unknown.</p>
+                            <p>As an artist, I am driven by the pursuit of the intangible, conjuring forth the abstracted realities that dwell just beyond the periphery of perception. My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to grapple with the intangible, and to find solace in the shared quest to understand the immeasurable dimensions of being.</p>
+                            <RiDoubleQuotesR className='text-light-gold ml-auto' />
                         </div>
 
                     </div>
