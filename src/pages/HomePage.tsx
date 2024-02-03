@@ -9,6 +9,7 @@ import Arts from '../components/home/Arts'
 import Footer from '../components/Footer'
 import { arts } from '../lib/constants'
 import { Link } from 'react-router-dom'
+import SlickCarousel from '../components/SlickCarousel'
 const HomePage: FC = () => {
     const smoothScroll = (targetId: string) => {
         const targetElement = document.getElementById(targetId);
@@ -67,7 +68,9 @@ const HomePage: FC = () => {
                     <p className='dark:text-slate-300'>A pixelated hive mind becomes my interlocutor and amidst the clash of our two dimensions, previously 	hidden form is discovered and extracted in ways that almost seem impossible.	By	merging and manipulating these buzzing bio-technological landscapes within the digital realm, I compose a symphony of forms that blur the lines between the virtual and the real, the conscious and the subconscious.</p>
                 </MaxWidthWrapper>
             </div>
-            <Carousel />
+            {/* <Carousel /> */}
+            {/* add slick carousel */}
+            <SlickCarousel />
             <div className="flex flex-col gap-2 sm:gap-5">
                 <MaxWidthWrapper className='flex flex-col text-center w-full gap-10'>
                     <h1 className='text-2xl justify-self-center mx-auto sm:text-3xl [text-shadow:1px_1px_50px_var(--tw-shadow-color)] text-light-gold shadow-light-gold font-[nanum,sans-serif]'>GALLERY</h1>
@@ -88,6 +91,9 @@ const HomePage: FC = () => {
                 <div className="w-full relative">
                     <div className="absolute left-0 top-[40%] h-screen">
                         <img src={bgsec1} alt="home left" className='hidden sm:block h-4/5' />
+                    </div>
+                    <div className="absolute right-0 scale-[-1] -bottom-10 h-screen">
+                        <img src={bgsec1} alt="home left" className='block h-4/5' />
                     </div>
                     <Arts images={arts.slice(24)} />
                 </div>
