@@ -5,6 +5,7 @@ export { default as bgsec2 } from './images/bgsec2.png'
 export { default as prof_pic } from './images/madoc.png'
 export { default as contact_bg } from './images/contact_bg.png'
 export { default as contact_banner } from './images/contact_banner.png'
+export { default as art_detail_accent } from './images/art_detail_accent.png'
 
 
 // arts images
