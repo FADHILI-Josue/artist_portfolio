@@ -3,6 +3,8 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useIsSmallScreen } from '../hooks/isXscreen';
 import { cn } from '../lib/utils';
 import { getRandomArts } from '../lib/util_fn';
+import { Link } from 'react-router-dom';
+import { arts } from '../lib/constants';
 
 
 interface CarouselProps { }
@@ -67,12 +69,12 @@ const Carousel: FC<CarouselProps> = () => {
       <div className="relative h-full inline-flex overflow-hidden w-full gap-1 sm:gap-2">
         {
           images?.map((_, i) =>
-            <div key={i} className={cn('hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full', { 'w-1/2': isSmallScreen })} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            <Link to={`/art/${arts.findIndex((e)=>e.title == images[i].title)}`} key={i} className={cn('hover:scale-110 bg-white rounded-md w-1/3 shrink-0 transition-all duration-500 h-full', { 'w-1/2': isSmallScreen })} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
               <div className="h-[50vw] lg:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i].image} alt="arts" className='w-full h-full object-contain' /></div>
               <p className="h-full font-thin text-center text-xs w-full sm:text-sm md:text-base text-black my-4 sm:font-medium md:font-semibold">
                 {images[i].title ?? "image title"}
               </p>
-            </div>
+            </Link>
           )
         }
       </div>
