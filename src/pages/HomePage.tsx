@@ -70,7 +70,7 @@ const HomePage: FC = () => {
             {/* <Carousel /> */}
             {/* add slick carousel */}
             <SlickCarousel />
-            <div className="flex mt-10 flex-col gap-2 sm:gap-5">
+            <div id='work' className="flex mt-10 flex-col gap-2 sm:gap-5">
                 <MaxWidthWrapper className='flex flex-col text-center w-full gap-10'>
                     <h1 className='text-2xl justify-self-center mx-auto sm:text-3xl [text-shadow:1px_1px_50px_var(--tw-shadow-color)] text-light-gold shadow-light-gold font-[nanum,sans-serif]'>GALLERY</h1>
                     <p className='mb-10 dark:text-slate-300 sm:mb-20 justify-self-center mx-auto'>These works, like echoes in a void, attempt to visualize the vibrations of thought and the frequency of feeling. They are both the echo and the source, the question and the answer.</p>

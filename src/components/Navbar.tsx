@@ -30,25 +30,20 @@ const Navbar: FC = () => {
 
   const smoothScroll = (targetId: string) => {
     const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      // Check if current location is already the homepage
       if (window.location.pathname !== '/') {
-        // If not, navigate to the homepage
         navigate('/')
-        // Scroll after navigating to the homepage
         setTimeout(() => {
           smoothScroll(targetId);
-        }, 500); // Adjust the delay as needed to ensure the homepage is fully loaded
+        }, 500);
       } else {
-        // If already on the homepage, scroll to the target element
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+        targetElement?.scrollIntoView({ behavior: 'smooth' });
       }
-    }
+
   };
 
   return <div className="flex w-full justify-between my-10 text-zinc-700 dark:text-zinc-400">
     <Link to={'/about'} className={cn('hidden md:inline-block', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>
-    <Link to={'/'} className='hidden md:inline-block'>WORKS</Link>
+    <button  onClick={()=>smoothScroll('work')} className='hidden md:inline-block'>WORKS</button>
     <Link to={'/'} className='hidden md:inline-block dark:text-white text-black text-3xl uppercase'>Madoc Pierce</Link>
     <button onClick={()=>smoothScroll('contact')} className='hidden md:inline-block'>CONTACT</button>
     <button className='hidden md:flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white dark:bg-black/60 bg-black/10 rounded-full w-full h-full p-2 hover:scale-110 transition-all duration-200' /></button>
@@ -60,8 +55,8 @@ const Navbar: FC = () => {
         </SheetHeader>
         <div className="flex flex-col my-32 space-y-3">
           <Link to={'/about'} className={cn('underline underline-offset-2', { 'bg-gradient-to-r p-0 from-dark-gold via-light-gold to-black/30 bg-[length:100%_2px] bg-no-repeat bg-bottom': active === "/about" })}>ARTIST STATEMENT</Link>
-          <Link to={'/'} className='underline underline-offset-2'>WORKS</Link>
-          <Link to={'/contact'} className='underline underline-offset-2 '>CONTACT</Link>
+          <button onClick={()=>smoothScroll('work')} className='underline underline-offset-2'>WORKS</button>
+          <button  onClick={()=>smoothScroll('contact')} className='underline underline-offset-2 '>CONTACT</button>
         </div>
       </SheetContent>
     </Sheet>
