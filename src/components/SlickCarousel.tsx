@@ -22,7 +22,7 @@ const settings = {
     arrows: false,
     responsive: [
         {
-            breakpoint: 640,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -50,8 +50,8 @@ const SlickCarousel: FC<SlickCarouselProps> = () => {
                 {
                     images?.map((_, i) =>
                     <div key={i} className="w-full px-1">
-                        <div className={cn('hover border bg-white rounded-md h-full')}>
-                            <div className="h-[50vw] lg:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i].image} alt="arts" className='w-full h-full object-contain' /></div>
+                        <div className={cn('hover border pt-10 bg-white rounded-md h-full')}>
+                            <div className="h-[50vw] ms:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i].image} alt="arts" className='w-full h-full object-contain' /></div>
                             <p className="h-full font-thin text-center text-xs w-full sm:text-sm md:text-base text-black hover:underline my-4 sm:font-medium md:font-semibold">
                             <Link to={`/art/${arts.findIndex((e)=>e.title == images[i].title)}`}>
                                 {images[i].title ?? "image title"}
@@ -62,8 +62,8 @@ const SlickCarousel: FC<SlickCarouselProps> = () => {
                     )
                 }
             </Slider>
-            <button className='absolute z-30 transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 top-1/2 rounded-l-sm -translate-y-1/2 right-0 text-xs sm:text-sm p-3' onClick={() => next()}><FaArrowRight /></button>
-            <button className='absolute z-30 transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 top-1/2 rounded-r-sm -translate-y-1/2 h-fit left-0 text-xs sm:text-sm p-3' onClick={() => prev()}><FaArrowLeft /></button>
+            <button className='absolute z-30 transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 top-1/2 rounded-l-sm -translate-y-1/2 right-0 text-xs sm:text-sm py-6 px-3' onClick={() => next()}><FaArrowRight /></button>
+            <button className='absolute z-30 transition-all text-light-gold bg-black/70 hover:bg-black/80 duration-300 top-1/2 rounded-r-sm -translate-y-1/2 h-fit left-0 text-xs sm:text-sm py-6 px-3' onClick={() => prev()}><FaArrowLeft /></button>
         </div>
         <div className='[&>*]:bg-black dark:[&>*]:bg-light-gold [&>*]:rounded-md p-10 flex justify-center gap-2 items-center'>
             <div className="h-[0.10rem] w-3" />

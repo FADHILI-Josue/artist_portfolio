@@ -39,11 +39,11 @@ const AboutPage = () => {
                         <button className='text-light-gold hover:scale-110 transition-all duration-300' onClick={() => navigate(-1)}>&larr; Back</button>
                         <button className='flex bg-stone-300/40 h-8 w-8 items-center justify-center rounded-full' onClick={() => toggleMode()}><MdWbSunny size={20} className='text-black dark:text-white hover:scale-110 transition-all duration-200' /></button>
                     </div>
-                    <div className="w-full font-light sm:font-normal text-center sm:text-left px-2 text-sm sm:text-xl backdrop-blur-3xl sm:px-10 py-20 sm:bg-white/70 shadow-xl sm:dark:bg-[#281c0c]">
+                    <div className="w-full font-light sm:font-normal text-center sm:text-left px-2 text-sm sm:text-xl backdrop-blur-3xl sm:px-10 py-5 sm:bg-white/70 shadow-xl sm:dark:bg-[#281c0c]">
                         <div className="sm:float-left sm:mx-5 sm:pt-12">
                             <img src={prof_pic} alt="profile" className='w-72 mx-auto sm:mx-0 md:w-80 lg:w-[35rem] object-contain' />
                         </div>
-                        <div className="bg-white dark:bg-transparent [&>p]:my-5 sm:bg-transparent">
+                        <div className=" [&>p]:my-5">
                             <RiDoubleQuotesL className='text-light-gold' />
                             <p>In the alchemy of my art, I seek to	map the uncharted territories of the human experience. Blank sheets	become the liminal spaces where thoughts are given volume and emotions are rendered in a spectrum of colors that echo the complexity of	feeling and the resonance of mental states. I labor to give shape to the	shapeless-to fashion a visual lexicon for the ineffable nuances of consciousness</p>
                             <p>My process is a pilgrimage through layers of abstraction. It begins with the 		precision of Micron pens, which lay down the skeletal outlines of loose but 		calculated composition. I subject these sketches to a digital metamorphosis that 	stretches and extends concepts to their absolute limits. Codified inputs and manipulation evolve into an extension of my linework. </p>

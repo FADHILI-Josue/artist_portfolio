@@ -9,7 +9,7 @@ const Footer: FC = () => {
       <div className="shrink-0 w-[30rem] ml-[15%] translate-y-20 bg-light-gold h-[30rem] opacity-60 blur-3xl rounded-full"></div>
       <div className="shrink-0 w-96 mr-[10%] bg-light-gold h-96 rounded-full opacity-50 blur-3xl"></div>
     </div>
-    <div className="relative backdrop-blur-3xl flex flex-col h-full">
+    <div className="relative backdrop-blur-3xl pt-10 flex flex-col h-full">
       <MaxWidthWrapper className='flex flex-col items-center text-center h-full'>
         <h1 className='text-xl my-10 sm:text-3xl [text-shadow:var(--tw-shadow-color)_1px_1px_30px] shadow-white/80 font-[nanum,sans-serif]'>CONTACT <span className='[text-shadow:1px_1px_30px_var(--tw-shadow-color)] text-light-gold shadow-light-gold/80'>ME</span></h1>
         <p className='text-sm sm:text-lg font-light dark:dark:text-slate-100'>My art is an invitation to viewers: to delve into the visual manifestations of mindscapes, to grapple with the
