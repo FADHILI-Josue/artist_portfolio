@@ -51,7 +51,7 @@ const SlickCarousel: FC<SlickCarouselProps> = () => {
                     images?.map((_, i) =>
                     <div key={i} className="w-full px-1">
                         <div className={cn('hover border pt-10 bg-white rounded-md h-full')}>
-                            <div className="h-[50vw] ms:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i].image} alt="arts" className='w-full h-full object-contain' /></div>
+                            <div className="h-[20vw] ms:h-[25rem] w-full overflow-hidden"><img draggable="false" key={i} src={images[i].image} alt="arts" className='w-full h-full object-contain' /></div>
                             <p className="h-full font-thin text-center text-xs w-full sm:text-sm md:text-base text-black hover:underline my-4 sm:font-medium md:font-semibold">
                             <Link to={`/art/${arts.findIndex((e)=>e.title == images[i].title)}`}>
                                 {images[i].title ?? "image title"}

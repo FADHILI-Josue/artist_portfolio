@@ -4,15 +4,7 @@
   ],
   "images": {
     "sizes": [256, 640, 1080, 2048, 3840],
-    "remotePatterns": [
-      {
-        "protocol": "https",
-        "hostname": "example.com",
-        "port": "",
-        "pathname": "/account123/**"
-      }
-    ],
-    "formats": ["image/webp", "image/jpeg", "image/png", "image/heic"],
+    "formats": ["image/webp", "image/jpeg", "image/png"],
     "minimumCacheTTL": 60,
     "dangerouslyAllowSVG": false,
     "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",

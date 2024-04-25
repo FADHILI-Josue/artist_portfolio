@@ -1,4 +1,4 @@
-import { a1, a2, a3, a5, a6, a7, a8, a9, a10, a17, a18, a19, a21, a22, a23, a24, a25, a26, a27, a28, a29, a31, a32, a12, a13, a14, a15, a16, a30, a11, a33, a34 } from "../assets";
+import { a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a17, a18, a19, a21, a22, a23, a24, a25, a26, a27, a28, a29, a31, a32, a12, a13, a14, a15, a16, a30, a11, a33, a34, a35, a36, a37, a38 } from "../assets";
 export interface IArt {
     title: string;
     image: string;
@@ -19,12 +19,12 @@ export const arts: IArt[] = [
         medium: "Digital Mixed Media",
         title: "4th-Dimension no.5"
     },
-    // {
-    //     image: a4,
-    //     size: "23.5 x 23.5",
-    //     medium: "Conté Crayon",
-    //     title: "Arabelle"
-    // },
+    {
+        image: a4,
+        size: "23.5 x 23.5",
+        medium: "Conté Crayon",
+        title: "Arabelle"
+    },
     {
         image: a23,
         size: "50 x 38.5",
@@ -97,7 +97,6 @@ export const arts: IArt[] = [
         medium: "India Ink",
         title: "Lungs"
     },
-    // TODO: CHANGE THIS TO HANDS IMAGES ARTS
     {
         image: a33,
         size: "42.5 x 54",
@@ -204,6 +203,30 @@ export const arts: IArt[] = [
     },
     {
         image: a32,
+        size: "25 x 19",
+        medium: "Micro Pen",
+        title: "Zentangle"
+    },
+    {
+        image: a35,
+        size: "25 x 19",
+        medium: "Micro Pen",
+        title: "Zentangle"
+    },
+    {
+        image: a36,
+        size: "25 x 19",
+        medium: "Micro Pen",
+        title: "Zentangle"
+    },
+    {
+        image: a37,
+        size: "25 x 19",
+        medium: "Micro Pen",
+        title: "Zentangle"
+    },
+    {
+        image: a38,
         size: "25 x 19",
         medium: "Micro Pen",
         title: "Zentangle"
